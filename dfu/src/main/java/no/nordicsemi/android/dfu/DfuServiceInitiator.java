@@ -54,9 +54,9 @@ public final class DfuServiceInitiator {
 	public static final int DEFAULT_MBR_SIZE = 0x1000;
 
 	/** Constant used to narrow the scope of the update to system components (SD+BL) only. */
-	public static final int SCOPE_SYSTEM_COMPONENTS = 1;
+	public static final int SCOPE_SYSTEM_COMPONENTS = 7578;
 	/** Constant used to narrow the scope of the update to application only. */
-	public static final int SCOPE_APPLICATION = 2;
+	public static final int SCOPE_APPLICATION = 3542;
 
 	private final String deviceAddress;
 	private String deviceName;

@@ -48,9 +48,12 @@ import no.nordicsemi.android.dfu.internal.scanner.BootloaderScannerFactory;
 /* package */ abstract class BaseDfuImpl implements DfuService {
 	private static final String TAG = "DfuImpl";
 
-	static final UUID GENERIC_ATTRIBUTE_SERVICE_UUID = new UUID(0x0000180100001000L, 0x800000805F9B34FBL);
-	static final UUID SERVICE_CHANGED_UUID           = new UUID(0x00002A0500001000L, 0x800000805F9B34FBL);
-	static final UUID CLIENT_CHARACTERISTIC_CONFIG   = new UUID(0x0000290200001000L, 0x800000805f9b34fbL);
+	static final UUID GENERIC_ATTRIBUTE_SERVICE_UUID = new UUID(26392574038016L, -9223371485494954757L);
+
+	static final UUID SERVICE_CHANGED_UUID           = new UUID(46200963207168L, -9223371485494954757L);
+
+	static final UUID CLIENT_CHARACTERISTIC_CONFIG   = new UUID(45088566677504L, -9223371485494954757L);
+
 	static final int NOTIFICATIONS = 1;
 	static final int INDICATIONS = 2;
 

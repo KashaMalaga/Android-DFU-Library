@@ -55,13 +55,11 @@ import no.nordicsemi.android.dfu.internal.exception.UploadAbortedException;
  */
 /* package */ class ButtonlessDfuWithoutBondSharingImpl extends ButtonlessDfuImpl {
 	/** The UUID of the Secure DFU service from SDK 12. */
-	static final UUID DEFAULT_BUTTONLESS_DFU_SERVICE_UUID = SecureDfuImpl.DEFAULT_DFU_SERVICE_UUID;
-	/** The UUID of the Secure Buttonless DFU characteristic without bond sharing from SDK 13. */
-	static final UUID DEFAULT_BUTTONLESS_DFU_UUID = new UUID(0x8EC90003F3154F60L, 0x9FB8838830DAEA50L);
 
-	static UUID BUTTONLESS_DFU_SERVICE_UUID = DEFAULT_BUTTONLESS_DFU_SERVICE_UUID;
-	static UUID BUTTONLESS_DFU_UUID         = DEFAULT_BUTTONLESS_DFU_UUID;
-
+	protected static final UUID DEFAULT_BUTTONLESS_DFU_SERVICE_UUID = SecureDfuImpl.DEFAULT_DFU_SERVICE_UUID;
+	protected static final UUID DEFAULT_BUTTONLESS_DFU_UUID = new UUID(-8157989233041780896L, -6937650605005804976L);
+	protected static UUID BUTTONLESS_DFU_SERVICE_UUID = DEFAULT_BUTTONLESS_DFU_SERVICE_UUID;
+	protected static UUID BUTTONLESS_DFU_UUID = DEFAULT_BUTTONLESS_DFU_UUID;
 	private BluetoothGattCharacteristic mButtonlessDfuCharacteristic;
 
 	ButtonlessDfuWithoutBondSharingImpl(@NonNull final Intent intent, @NonNull final DfuBaseService service) {
